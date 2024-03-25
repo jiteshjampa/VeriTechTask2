@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 6px;
+}
+.body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+.NavBar {
+  background-color: black;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0.5rem 0px;
+  padding: 25px;
+}
+.navbar a {
+  text-decoration: none;
+  line-height: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.nav img {
+  width: 50px;
+  height: 50px;
+}
+.nav li img {
+  position: absolute;
+  background: black;
+  top: 20px;
+  left: 20px;
+}
+.nav button {
+  padding: 12px 24px;
+  background-image: linear-gradient(to bottom right, red, blue);
+  color: white;
+  border: none;
+}
+.nav li a::before {
+  content: "";
+
+  position: relative;
+  top: 100%;
+  left: 0px;
+  width: 0px;
+  height: 2px;
+  border-radius: 10px;
+  display: block;
+  background-color: white;
+  transition: width 0.5s ease-out 0.3s;
+}
+.nav:hover li a::before {
+  width: 100%;
+}
+.Intro {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 500px;
+}
+.Intro img {
+  width: 100%;
+  border-radius: 15px;
+}
+.Introduction {
+  background-image: url("./images/back.gif");
+  background-position: center;
+  overflow: hidden;
+}
+@keyframes starts {
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.img1 {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: starts;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.content {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  font-size: large;
+  line-height: 40px;
+  animation-name: start;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes start {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.content span {
+  font-weight: 700;
+  font-size: 60px;
+}
+.content p {
+  font-size: 30px;
+  text-align: center;
+}
+.contest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.cardbox {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(0px);
+  transition: transform 0.5s ease;
+}
+.cardbox:hover {
+  transform: translateY(-50px);
+  transition: transform 0.5s ease-in-out 0.3s;
+}
+.img2 img {
+  width: 20px;
+  height: 20px;
+}
+.img1 img {
+  width: 300px;
+  height: 300px;
+}
+.img4 img {
+  width: 20px;
+  height: 20px;
+}
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+.cardbox p {
+  width: 200px;
+  line-height: 26px;
+  text-align: center;
+}
+.cardbox .img3 img {
+  width: 200px;
+  height: 200px;
+}
+.cardbox p,
+.cardbox h3 {
+  padding: 8px;
+}
+.cardbox button {
+  padding: 8px 12px;
+  background-color: orangered;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 60px;
+  padding: 30px;
+}
+.navy {
+  color: orange;
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  .Introduction {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav li a::before {
+    display: none;
+  }
+  .nav li a::after {
+    content: "";
+
+    position: relative;
+    top: 0%;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    border-radius: 10px;
+    display: block;
+    background-color: white;
+    transition: width 0.5s ease-out 0.3s;
+  }
+  .nav:hover li a::after {
+    width: 100%;
+  }
+  .NavBar {
+    height: 100px;
+  }
+  .navheights {
+    height: auto;
+  }
+
+  .navbar {
+    display: none;
+  }
+  #logo {
+    display: block;
+  }
+  .navy {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    border-radius: 50%;
+  }
+  .navy button {
+    padding: 3px 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .navy button img {
+    width: 40px;
+    height: 40px;
+  }
+  .navy button:hover {
+    background-color: yellow;
+  }
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Intro {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    padding: 20px;
+    padding-bottom: 70px;
+  }
+  .content span {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .Intro .img1 img {
+    width: 140px;
+    height: 140px;
+    margin: 30px;
+  }
+  .course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.course {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.course_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.course_container p {
+  width: 80%;
+  margin-top: 60px;
+}
+.course_container button {
+  padding: 12px 20px;
+  background-color: rgb(16, 184, 16);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  margin: 20px;
+}
+.course_container button:hover {
+  color: white;
+  background-color: green;
+}
+.python img {
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+}
+.courses {
+  background-color: black;
+  color: white;
+}
+.contest {
+  background-color: linea;
+}
+.footer_contest ul {
+  list-style: none;
+  text-align: center;
+}
+.footer_contest li {
+  line-height: 35px;
+}
+
+.footer_contest li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer_container img {
+  width: 20px;
+  height: 20px;
+}
+.footer_copy {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin: 20px;
+}
+.footer_courses ul {
+  list-style: none;
+  text-align: center;
+}
+.footer_courses li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.footer_courses li {
+  line-height: 35px;
+}
+.footer_courses li a {
+  font-size: 13px;
+}
+.footer_contest li a {
+  font-size: 13px;
+}
+.footer_courses,
+.footer_contest {
+  margin: 30px;
+}
+.footer_copy {
+  margin-bottom: 60px;
+}

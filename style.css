@@ -328,6 +328,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align:center;
 }
 
 .course_container p {
